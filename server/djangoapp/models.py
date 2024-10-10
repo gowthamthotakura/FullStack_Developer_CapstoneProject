@@ -17,7 +17,7 @@ class CarMake(models.Model):
     description = models.TextField()
     # Other fields as needed
 
-    def __str__(self):
+def __str__(self):
         return self.name  # Return the name as the string representation
 
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
@@ -32,16 +32,19 @@ class CarModel(models.Model):
         ('SEDAN', 'Sedan'),
         ('SUV', 'SUV'),
         ('WAGON', 'Wagon'),
-        # Add more choices as required
     ]
+
+
 type = models.CharField(max_length=10,
-           choices=CAR_TYPES,
-           default='SUV')
+       choices=CAR_TYPES,
+       default='SUV')
+
+
 year = models.IntegerField(default=2023,
-           validators=[
-           MaxValueValidator(2023),
-           MinValueValidator(2015),
-        ])
+       validators=[
+       MaxValueValidator(2023),
+       MinValueValidator(2015),
+    ])
     # Other fields as needed
 
 def __str__(self):
