@@ -45,7 +45,8 @@ def login_user(request):
 
 # Create a `logout_request` view to handle sign out request
 
-def logout_request(request): 
+
+def logout_request(request) : 
     logout(request)
     data = {"userName": ""}
     return JsonResponse(data)
@@ -68,7 +69,8 @@ def registration(request):
         # Check if user already exists
         User.objects.get(username=username)
         username_exist = True
-    except:
+        
+    except Exception as e::
         # If not, simply log this is a new user
         logger.debug("{} is new user".format(username))
 
