@@ -23,6 +23,7 @@ class CarMake(models.Model):
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
 # - Many-To-One relationship to Car Make model (One Car Make has many
 
+
 class CarModel(models.Model):
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
     # Many-to-One relationship
@@ -33,8 +34,10 @@ class CarModel(models.Model):
         ('WAGON', 'Wagon'),
         # Add more choices as required
     ]
+    
     type = models.CharField(max_length=10,
            choices=CAR_TYPES, default='SUV')
+    
     year = models.IntegerField(default=2023,
         validators=[
             MaxValueValidator(2023),
