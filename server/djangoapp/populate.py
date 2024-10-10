@@ -10,7 +10,7 @@ def initiate():
     {"name": "Toyota", "description": "Great cars. Japanese technology"},
   ]
 
-    car_make_instances = []
+  car_make_instances = []
     for data in car_make_data:
       car_make_instances.append(CarMake.objects.create(
         name=data["name"],description = data ['description']))
@@ -53,8 +53,8 @@ def initiate():
 
 
 for data in car_model_data:
-    CarModel.objects.create(name=data['name'],
-    car_make = data['car_make'],
-    type=data['type'],
-    year=data['year']
-    )
+    CarModel.objects.create(
+      name=data['name'],
+      car_make = data['car_make'],
+      type=data['type'],
+      year=data['year'])
