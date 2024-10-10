@@ -17,7 +17,7 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from .populate import initiate
 
-from .restapis import get_request, analyze_review_sentiments, post_review
+# from .restapis import get_request, analyze_review_sentiments, post_review
 
 
 # Get an instance of a logger
@@ -119,6 +119,7 @@ def get_cars(request):
 # Create a `get_dealer_reviews` view to render the reviews of a dealer
 # def get_dealer_reviews(request,dealer_id):
 # ...
+
 
 def get_dealer_reviews(request, dealer_id):
     # if dealer id has been provided
