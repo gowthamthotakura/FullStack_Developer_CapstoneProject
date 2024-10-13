@@ -1,3 +1,7 @@
+
+![image](https://github.com/user-attachments/assets/ea35b8e5-230f-44f3-a37e-530518ae10a3)
+
+
  
 Architecture Overview
 The final project for this course has several steps. The project is divided into smaller labs, with detailed instructions for each step. I must complete all labs to complete the project successfully.
@@ -58,4 +62,4 @@ The solution will consist of multiple technologies
 
 
 
-![image](https://github.com/user-attachments/assets/ea35b8e5-230f-44f3-a37e-530518ae10a3)
+
